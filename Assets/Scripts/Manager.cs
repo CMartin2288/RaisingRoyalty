@@ -38,7 +38,7 @@ public class Manager : MonoBehaviour
     public static float physical = 0;
     public static float handiness = 0;
     public static float creative = 0;
-    public static float performance = 0;
+    public static float performing = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +51,22 @@ public class Manager : MonoBehaviour
     {
         dateGold.text = months[thisMonth] + ", Year " + thisYear.ToString() + "\n" + gold.ToString() + " G";
         
+        stats.text = "<size=+20><b>Personality</b></size>\n";
+        stats.text += "Constitution\t\t" + constitution + "\n";
+        stats.text += "Strength\t\t" + strength + "\n";
+        stats.text += "Intellect\t\t" + intellect + "\n";
+        stats.text += "Grace \t\t" + grace + "\n";
+        stats.text += "Charm \t\t" + charm + "\n\n";
+        stats.text += "<size=+20><b>Relationships</b></size>\n";
+        stats.text += "Trust\t\t\t" + trust + "\n";
+        stats.text += "Morals\t\t" + morals + "\n";
+        stats.text += "Fame \t\t" + fame + "\n\n";
+        stats.text += "<size=+20><b>Work</b></size>\n";
+        stats.text += "Stress\t\t" + stress + "\n";
+        stats.text += "Physical Talent\t" + physical + "\n";
+        stats.text += "Handiness Talent\t" + handiness + "\n";
+        stats.text += "Creative Talent\t" + creative + "\n";
+        stats.text += "Performing Talent\t" + performing;
     }
 
     public void AdvanceTime()
