@@ -20,7 +20,7 @@ public class Relax : Activity
     
     public void perform()
     {
-        rText.text = "Stayed at home to rest.\n\nStress: " + Manager.stress + " -> " + (Manager.stress - Constants.statSmall*multiplier);
+        rText.text = "Stayed at home to rest.\n\nStress: " + Manager.stress + " - " + (Constants.statSmall*multiplier);
         Manager.stress = Manager.stress - Constants.statSmall*multiplier;
     }
 }

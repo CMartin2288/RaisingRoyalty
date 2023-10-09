@@ -9,4 +9,7 @@ public class Constants
     public const float statMedium = 3;
     public const float statLarge = 4;
     public const float statHuge = 5;
+
+    public const int goalYear = 2;
+    public const int goalMonth = 1;
 }

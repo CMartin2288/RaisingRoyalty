@@ -12,6 +12,7 @@ public class ScheduleManager : MonoBehaviour
     public Image week3;
     public Image week4;
     public GameObject resultPanel;
+    public GameObject goButton;
     public Image rImage;
     public TMP_Text rText;
     public Manager genManager;
@@ -20,6 +21,7 @@ public class ScheduleManager : MonoBehaviour
     public int numScheduled;
     public string queuedType;
     public Sprite queuedImage;
+    public Sprite scheduleDefault;
     
     // Start is called before the first frame update
     void Start()
@@ -102,6 +104,40 @@ public class ScheduleManager : MonoBehaviour
                 break;
             case 4:
                 week4.sprite = queuedImage;
+                goButton.SetActive(true);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void remove()
+    {
+        if(numScheduled == 0)
+        {
+            SceneChanger sc = GetComponent<SceneChanger>();
+            sc.ChangeScene("Main");
+            return;
+        }
+        
+        goButton.SetActive(false);
+        //Track the number
+        numScheduled--;
+        schedule[numScheduled] = null;
+        //Put the image in the right place
+        switch(numScheduled)
+        {
+            case 0:
+                week1.sprite = scheduleDefault;
+                break;
+            case 1:
+                week2.sprite = scheduleDefault;
+                break;
+            case 2:
+                week3.sprite = scheduleDefault;
+                break;
+            case 3:
+                week4.sprite = scheduleDefault;
                 break;
             default:
                 break;
@@ -126,6 +162,36 @@ public class ScheduleManager : MonoBehaviour
             for(int j=0; j<5; j++)
             {
                 schedule[i].perform();
+                
+                //Sickness penalty
+                if(Manager.sick)
+                {
+                    rText.text += "\n\n<color=red>Sick:\n";
+                    switch(Random.Range(1,6))
+                    {
+                        case 2:
+                            rText.text += "Strength -1</color>";
+                            Manager.strength -= Constants.statTiny;
+                            break;
+                        case 3:
+                            rText.text += "Intellect -1</color>";
+                            Manager.intellect -= Constants.statTiny;
+                            break;
+                        case 4:
+                            rText.text += "Grace -1</color>";
+                            Manager.grace -= Constants.statTiny;
+                            break;
+                        case 5:
+                            rText.text += "Charm -1</color>";
+                            Manager.charm -= Constants.statTiny;
+                            break;
+                        default:
+                            rText.text += "Constitution -1</color>";
+                            Manager.constitution -= Constants.statTiny;
+                            break;
+                    }
+                }
+
                 //Pause to show the player the results
                 yield return new WaitForSeconds(1);
             }

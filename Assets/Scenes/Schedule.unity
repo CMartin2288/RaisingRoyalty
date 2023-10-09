@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 61817339}
   - component: {fileID: 61817338}
   - component: {fileID: 61817341}
+  - component: {fileID: 61817342}
   m_Layer: 5
   m_Name: ScheduleButton
   m_TagString: Untagged
@@ -274,12 +275,26 @@ MonoBehaviour:
   week3: {fileID: 132132605}
   week4: {fileID: 475095996}
   resultPanel: {fileID: 1275599568}
+  goButton: {fileID: 950640263}
   rImage: {fileID: 861679164}
   rText: {fileID: 2122809625}
   genManager: {fileID: 2048590231}
   numScheduled: 0
   queuedType: 
   queuedImage: {fileID: 0}
+  scheduleDefault: {fileID: 0}
+--- !u!114 &61817342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61817336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bcbd5d4670d2f43bc27cfc55dfb2e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &64362215
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,8 +377,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2113988041}
   m_HandleRect: {fileID: 2113988040}
   m_Direction: 2
-  m_Value: -0.0000024138822
-  m_Size: 0.7941889
+  m_Value: -0.00000034484032
+  m_Size: 0.7941903
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -858,7 +873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 176.99582}
+  m_AnchoredPosition: {x: 0, y: 176.99547}
   m_SizeDelta: {x: 0, y: 859.9954}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &335169958
@@ -2635,7 +2650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &950640264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4316,7 +4331,6 @@ GameObject:
   - component: {fileID: 1727272621}
   - component: {fileID: 1727272620}
   - component: {fileID: 1727272619}
-  - component: {fileID: 1727272622}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -4388,10 +4402,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1727272622}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 61817341}
+        m_TargetAssemblyTypeName: ScheduleManager, Assembly-CSharp
+        m_MethodName: remove
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4438,18 +4452,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727272617}
   m_CullTransparentMesh: 1
---- !u!114 &1727272622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727272617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48bcbd5d4670d2f43bc27cfc55dfb2e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1737897306
 GameObject:
   m_ObjectHideFlags: 0
@@ -5190,7 +5192,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
