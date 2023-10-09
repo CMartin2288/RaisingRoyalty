@@ -5,8 +5,11 @@ using TMPro;
 
 public class Manager : MonoBehaviour
 {
+    //References to Game Objects
     public TMP_Text dateGold;
     public TMP_Text stats;
+
+    public SceneChanger sceneChanger;
 
     public static string[] months = {"Error",
         "January",
@@ -43,7 +46,7 @@ public class Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        sceneChanger = GetComponent<SceneChanger>();
     }
 
     // Update is called once per frame
@@ -77,5 +80,7 @@ public class Manager : MonoBehaviour
             thisMonth = 1;
             thisYear = thisYear+1;
         }
+
+        sceneChanger.ChangeScene("Main");
     }
 }
