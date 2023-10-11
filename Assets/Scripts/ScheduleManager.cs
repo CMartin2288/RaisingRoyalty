@@ -166,9 +166,13 @@ public class ScheduleManager : MonoBehaviour
                 //Sickness penalty
                 if(Manager.sick)
                 {
-                    rText.text += "\n\n<color=red>Sick:\n";
-                    switch(Random.Range(1,6))
+                    rText.text += "\n\n<color=red>Sick\n";
+                    switch(Random.Range(1,11))
                     {
+                        case 1:
+                            rText.text += "Constitution -1</color>";
+                            Manager.constitution -= Constants.statTiny;
+                            break;
                         case 2:
                             rText.text += "Strength -1</color>";
                             Manager.strength -= Constants.statTiny;
@@ -186,8 +190,6 @@ public class ScheduleManager : MonoBehaviour
                             Manager.charm -= Constants.statTiny;
                             break;
                         default:
-                            rText.text += "Constitution -1</color>";
-                            Manager.constitution -= Constants.statTiny;
                             break;
                     }
                 }
