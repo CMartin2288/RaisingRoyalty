@@ -120,34 +120,37 @@ public class ScheduleManager : MonoBehaviour
 
     public void remove()
     {
-        if(numScheduled == 0)
+        if(numScheduled > 0)
         {
-            SceneChanger sc = GetComponent<SceneChanger>();
-            sc.ChangeScene("Main");
-            return;
-        }
-        
-        goButton.SetActive(false);
-        //Track the number
-        numScheduled--;
-        schedule[numScheduled] = null;
-        //Put the image in the right place
-        switch(numScheduled)
-        {
-            case 0:
-                week1.sprite = scheduleDefault;
-                break;
-            case 1:
-                week2.sprite = scheduleDefault;
-                break;
-            case 2:
-                week3.sprite = scheduleDefault;
-                break;
-            case 3:
-                week4.sprite = scheduleDefault;
-                break;
-            default:
-                break;
+            // if(numScheduled == 0)
+            // {
+            //     SceneChanger sc = GetComponent<SceneChanger>();
+            //     sc.ChangeScene("Main");
+            //     return;
+            // }
+            
+            goButton.SetActive(false);
+            //Track the number
+            numScheduled--;
+            schedule[numScheduled] = null;
+            //Put the image in the right place
+            switch(numScheduled)
+            {
+                case 0:
+                    week1.sprite = scheduleDefault;
+                    break;
+                case 1:
+                    week2.sprite = scheduleDefault;
+                    break;
+                case 2:
+                    week3.sprite = scheduleDefault;
+                    break;
+                case 3:
+                    week4.sprite = scheduleDefault;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
