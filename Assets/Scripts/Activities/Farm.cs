@@ -31,26 +31,36 @@ public class Farm : Activity
         switch(checkSuccess())
         {
             case 0:
+                //Result Text
                 rText.text = "Did a poor job at the farm...\n\n"+
-                    "Constitution: " + Manager.constitution + " + " + (Constants.statSmall*multiplier*0.5f) + "\n" +
+                    "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Physical Talent: " + Manager.physical + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
+                    "Grace: " + Manager.grace + " - " + (Constants.statTiny*multiplier) + "\n" +
                     "Gold: " + Manager.gold + " + 5\n" +
-                    "Stress: " + Manager.stress + " + " + (Constants.statMedium*multiplier*1.5f);
-                Manager.gold = Manager.gold + 5;
-                Manager.constitution += Constants.statSmall*multiplier*0.5f;
+                    "Stress: " + Manager.stress + " + " + (Constants.statMedium*multiplier);
+                
+                //Stat Change
+                Manager.constitution += Constants.statTiny*multiplier*0.5f;
                 Manager.physical += Constants.statTiny*multiplier*0.5f;
-                Manager.stress = Manager.stress + Constants.statMedium*multiplier*1.5f;
+                Manager.grace -= Constants.statTiny*multiplier;
+                Manager.gold += 5;
+                Manager.stress += Constants.statMedium*multiplier;
                 break;
             case 1:
+                //Result Text
                 rText.text = "Did a good job at the farm.\n\n"+
-                    "Constitution: " + Manager.constitution + " + " + (Constants.statSmall*multiplier) + "\n" +
+                    "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Physical Talent: " + Manager.physical + " + " + (Constants.statTiny*multiplier) + "\n" +
+                    "Grace: " + Manager.grace + " - " + (Constants.statTiny*multiplier) + "\n" +
                     "Gold: " + Manager.gold + " + 10\n" +
                     "Stress: " + Manager.stress + " + " + (Constants.statMedium*multiplier);
-                Manager.gold = Manager.gold + 10;
-                Manager.constitution += Constants.statSmall*multiplier;
+                
+                //Stat Change
+                Manager.constitution += Constants.statTiny*multiplier;
                 Manager.physical += Constants.statTiny*multiplier;
-                Manager.stress = Manager.stress + Constants.statMedium*multiplier;
+                Manager.grace -= Constants.statTiny*multiplier;
+                Manager.gold += 10;
+                Manager.stress += Constants.statMedium*multiplier;
                 break;
             default:
                 Debug.Log("Activity Success Logic Error");
