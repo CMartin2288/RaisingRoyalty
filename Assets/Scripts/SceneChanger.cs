@@ -21,4 +21,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(sceneName);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
