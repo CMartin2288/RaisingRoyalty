@@ -66,12 +66,32 @@ public class ScheduleManager : MonoBehaviour
         //The queuedActivity should be set by the buttons under the _Opt panels in the scene
         switch(queuedType)
         {
-            /*case "Church":
+            case "Church":
+                newActivity = new Church();
                 break;
             case "Babysitting":
-                break;*/
+                newActivity = new Babysitting();
+                break;
             case "Farm":
                 newActivity = new Farm();
+                break;
+            case "Busking":
+                newActivity = new Busking();
+                break;
+            case "Craft":
+                newActivity = new Craft();
+                break;
+            case "Martial":
+                newActivity = new Martial();
+                break;
+            case "Magic":
+                newActivity = new Magic();
+                break;
+            case "Dance":
+                newActivity = new Dance();
+                break;
+            case "Etiquette":
+                newActivity = new Etiquette();
                 break;
             case "Relax":
                 newActivity = new Relax();
