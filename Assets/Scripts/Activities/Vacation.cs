@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Relax : Activity
+public class Vacation : Activity
 {
-    public float multiplier = 1;
+    public float multiplier = 2;
     public ScheduleManager sMan;
     public Image rImage;
     public TMP_Text rText;
 
-    public Relax()
+    public Vacation()
     {
         sMan = GameObject.Find("ScheduleButton").GetComponent<ScheduleManager>();
         rImage = sMan.getRImage();
@@ -20,8 +20,9 @@ public class Relax : Activity
     
     public void perform()
     {
-        rText.text = "Stayed at home to rest.\n\nStress: " + Manager.stress + " - " + (Constants.statMedium*multiplier);
+        rText.text = "Went out on Vacation.\n\nStress: " + Manager.stress + " - " + (Constants.statMedium*multiplier);
         Manager.stress = Manager.stress - Constants.statMedium*multiplier;
+        Manager.gold -= 10;
         
         if(Manager.sick) Manager.trust += Constants.statSmall;
     }

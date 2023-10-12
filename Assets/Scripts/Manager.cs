@@ -96,8 +96,13 @@ public class Manager : MonoBehaviour
         //Game Over Check
         if(gold < 0)
         {
-            canLose = true;
+            if(canLose)
+            {
+                Debug.Log("The Game Should Be Lost Here");
+            }
+            else canLose = true;
         }
+        else canLose = false;
 
         //Ending Check
         if(thisYear == Constants.goalYear && thisMonth == Constants.goalMonth)
@@ -106,12 +111,44 @@ public class Manager : MonoBehaviour
         }
 
         //Sick Check
-        if(Random.Range(1,3*constitution+1) <= stress) sick = true;
+        if(stress >= constitution && Random.Range(1,3) == 1) sick = true;
         else sick = false;
     }
 
     public void VerifyStats()
     {
+        if(constitution < 0) constitution = 0;
+        else if(constitution > 100) constitution = 100;
+        
+        if(strength < 0) strength = 0;
+        else if(strength > 100) strength = 100;
 
+        if(intellect < 0) intellect = 0;
+        else if(intellect > 100) intellect = 100;
+
+        if(grace < 0) grace = 0;
+        else if(grace > 100) grace = 100;
+
+        if(charm < 0) charm = 0;
+        else if(charm > 100) charm = 100;
+
+        if(trust < -100) trust = -100;
+        else if(trust > 100) trust = 100;
+
+        if(morals < -100) morals = -100;
+        else if(morals > 100) morals = 100;
+
+        if(fame < -100) fame = -100;
+        else if(fame > 100) fame = 100;
+
+        if(stress < 0) stress = 0;
+
+        if(physical > 100) physical = 100;
+        
+        if(handiness > 100) handiness = 100;
+
+        if(creative > 100) creative = 100;
+
+        if(performing > 100) performing = 100;
     }
 }

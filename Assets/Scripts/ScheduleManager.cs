@@ -66,11 +66,18 @@ public class ScheduleManager : MonoBehaviour
         //The queuedActivity should be set by the buttons under the _Opt panels in the scene
         switch(queuedType)
         {
+            /*case "Church":
+                break;
+            case "Babysitting":
+                break;*/
             case "Farm":
                 newActivity = new Farm();
                 break;
             case "Relax":
                 newActivity = new Relax();
+                break;
+            case "Vacation":
+                newActivity = new Vacation();
                 break;
             default:
                 return;
@@ -155,6 +162,12 @@ public class ScheduleManager : MonoBehaviour
     {
         //Show the results
         resultPanel.SetActive(true);
+
+        //Monthly expenses
+        rText.text = "Paid 30G for this month's expenses";
+        Manager.gold -= 30;
+        yield return new WaitForSeconds(1);
+
         //For each activity in the schedule
         for(int i=0; i<4; i++)
         {
@@ -166,9 +179,15 @@ public class ScheduleManager : MonoBehaviour
                 //Sickness penalty
                 if(Manager.sick)
                 {
-                    rText.text += "\n\n<color=red>Sick:\n";
-                    switch(Random.Range(1,6))
+                    Manager.trust -= Constants.statTiny;
+
+                    rText.text += "\n\n<color=red>Sick\n";
+                    switch(Random.Range(1,11))
                     {
+                        case 1:
+                            rText.text += "Constitution -1</color>";
+                            Manager.constitution -= Constants.statTiny;
+                            break;
                         case 2:
                             rText.text += "Strength -1</color>";
                             Manager.strength -= Constants.statTiny;
@@ -186,11 +205,11 @@ public class ScheduleManager : MonoBehaviour
                             Manager.charm -= Constants.statTiny;
                             break;
                         default:
-                            rText.text += "Constitution -1</color>";
-                            Manager.constitution -= Constants.statTiny;
                             break;
                     }
                 }
+
+                genManager.VerifyStats();
 
                 //Pause to show the player the results
                 yield return new WaitForSeconds(1);
