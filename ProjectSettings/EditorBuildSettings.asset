@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Schedule.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Talk.unity
+    guid: 8f66cd31260669c4eb8f322f38b5f20f
   m_configObjects: {}
