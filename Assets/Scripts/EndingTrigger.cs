@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EndingTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public Dialogue dialogue;
     void Awake(){
         TriggerEndingDialogue();
@@ -15,5 +13,4 @@ public class EndingTrigger : MonoBehaviour
         FindObjectOfType<EndingManager>().EndingDialogue(FindObjectOfType<Manager>(),
                                                           dialogue);
     }
-
 }

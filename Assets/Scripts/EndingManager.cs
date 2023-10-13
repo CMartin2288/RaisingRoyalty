@@ -8,7 +8,6 @@ using Random = System.Random;
 public class EndingManager : MonoBehaviour{
     private Queue<string> sentences = new Queue<string>();
     public Text dialogueText;
-
     public void EndingDialogue(Manager mgr, Dialogue dialogue){
         Debug.Log("Beginning an Ending Seqeunce");
         
@@ -101,21 +100,4 @@ public class EndingManager : MonoBehaviour{
     void EndDialogue(){
         Debug.Log("End of Conversation");
     }
-
-
-    // //Taken from https://stackoverflow.com/questions/49570175/simple-way-to-randomly-shuffle-list
-    // public static void Shuffle<string>(this List<string> list)  
-    // {  
-    //     Random random = new Random();  
-    //     int n = list.Count;  
-
-    //     for(int i= list.Count - 1; i > 1; i--)
-    //     {
-    //         int rnd = random.Next(i + 1);  
-
-    //         T value = list[rnd];  
-    //         list[rnd] = list[i];  
-    //         list[i] = value;
-    //     }
-    // }
 }
