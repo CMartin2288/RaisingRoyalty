@@ -53,7 +53,7 @@ public class EndingManager : MonoBehaviour{
         }
 
         //Princess
-        else if (Manager.grace > 80 && Manager.charm > 80 && Manager.morals > 80) {
+        else if (Manager.grace > 80 && Manager.morals > 50) {
             princess.SetActive(true);
             foreach (string sentence in dialogue.princess){
                 sentences.Enqueue(sentence);
@@ -62,7 +62,7 @@ public class EndingManager : MonoBehaviour{
         }
 
         //Spoiled
-        else if (Manager.grace > 80 && Manager.charm > 80 && Manager.morals <= 80) {
+        else if (Manager.grace > 80 && Manager.morals <= 50) {
             spoiled.SetActive(true);
             foreach (string sentence in dialogue.spoiled){
                 sentences.Enqueue(sentence);
@@ -71,6 +71,15 @@ public class EndingManager : MonoBehaviour{
         }
 
 
+        //Warrior
+        else if (Manager.strength > 80) {
+            warrior.SetActive(true);
+            foreach (string sentence in dialogue.warrior){
+                sentences.Enqueue(sentence);
+            }
+            this.DisplayNextSentence();
+        }
+        
         //Helping Hand
         else if (Manager.constitution > 80) {
             helping.SetActive(true);
@@ -79,15 +88,6 @@ public class EndingManager : MonoBehaviour{
             }
             this.DisplayNextSentence();
         }       
-
-        //Warrior
-        else if (Manager.strength > 80 && Manager.morals > 80) {
-            warrior.SetActive(true);
-            foreach (string sentence in dialogue.warrior){
-                sentences.Enqueue(sentence);
-            }
-            this.DisplayNextSentence();
-        }
 
         //Academic
         else if (Manager.intellect > 80) {
@@ -99,7 +99,7 @@ public class EndingManager : MonoBehaviour{
         }
 
         //Grace
-        else if (Manager.grace > 80 && Manager.charm > 80 && Manager.morals > 80) {
+        else if (Manager.grace > 80) {
             grace.SetActive(true);
             foreach (string sentence in dialogue.grace) {
                 sentences.Enqueue(sentence);

@@ -22,7 +22,7 @@ public class Church : Activity
     {
         int success = Random.Range(1,101);
 
-        if(success <= Manager.constitution) return 1;
+        if(success <= Manager.grace) return 1;
         else return 0;
     }
 
@@ -35,13 +35,13 @@ public class Church : Activity
                 rText.text = "Kicked up dust at church...\n\n"+
                     "Morals: " + Manager.morals + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Charm: " + Manager.charm + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
-                    "Gold: " + Manager.gold + " + 1\n" +
+                    "Gold: " + Manager.gold + " + 3\n" +
                     "Stress: " + Manager.stress + " + " + (Constants.statTiny*multiplier);
                 
                 //Stat Change
                 Manager.morals += Constants.statTiny*multiplier*0.5f;
                 Manager.charm += Constants.statTiny*multiplier*0.5f;
-                Manager.gold += 1;
+                Manager.gold += 3;
                 Manager.stress += Constants.statTiny*multiplier;
                 break;
             case 1:
@@ -49,13 +49,13 @@ public class Church : Activity
                 rText.text = "Tidied up around the church.\n\n"+
                     "Morals: " + Manager.morals + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Charm: " + Manager.charm + " + " + (Constants.statTiny*multiplier) + "\n" +
-                    "Gold: " + Manager.gold + " + 2\n" +
+                    "Gold: " + Manager.gold + " + 6\n" +
                     "Stress: " + Manager.stress + " + " + (Constants.statTiny*multiplier);
                 
                 //Stat Change
                 Manager.morals += Constants.statTiny*multiplier;
                 Manager.charm += Constants.statTiny*multiplier;
-                Manager.gold += 2;
+                Manager.gold += 6;
                 Manager.stress += Constants.statTiny*multiplier;
                 break;
             default:
