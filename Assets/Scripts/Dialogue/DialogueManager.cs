@@ -59,8 +59,8 @@ public class DialogueManager : MonoBehaviour{
         Debug.Log("Inside Event dialogue");
         // MAIN SCENE
         if (currScene=="Main") {
-            GameObject End = GameObject.FindWithTag("EndTrigger");
-            End.SetActive(false);
+            // GameObject End = GameObject.FindWithTag("EndTrigger");
+            // End.SetActive(false);
             if (Manager.thisMonth == 1 && Manager.thisYear == 1) { 
                 foreach (string sentence in dialogue.welcome){
                     sentences.Enqueue(sentence);
@@ -69,15 +69,16 @@ public class DialogueManager : MonoBehaviour{
             }
 
             //ENDING DETECTION
-            else if (Manager.thisYear> 1 || Manager.canLose) {
+            else if (Manager.thisMonth> 1 || Manager.canLose) {
                 // GameObject End = GameObject.FindWithTag("EndTrigger");
-                End.SetActive(true);
+                // End.SetActive(true);
+                SceneManager.LoadSceneAsync("Ending");
             }
 
             //PROMPT
             else{
-                GameObject ClickTo = GameObject.FindWithTag("ClickTo");
-                ClickTo.SetActive(false);
+                // GameObject ClickTo = GameObject.FindWithTag("ClickTo");
+                // ClickTo.SetActive(false);
                 foreach (string sentence in dialogue.prompt){
                     sentences.Enqueue(sentence);
                 }
