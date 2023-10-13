@@ -10,7 +10,7 @@ public class InitializeVariables : MonoBehaviour
         Manager.thisYear = 1;
         Manager.thisMonth = 1;
 
-        Manager.canLose = false;
+        Manager.canLose = 2;
 
         Manager.gold = 500;
 

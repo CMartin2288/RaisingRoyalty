@@ -44,7 +44,7 @@ public class EndingManager : MonoBehaviour{
         
         //ENDINGS
         //Destitute
-        if (Manager.canLose) {
+        if (Manager.canLose == 0) {
             destitute.SetActive(true);
             foreach (string sentence in dialogue.destitute){
                 sentences.Enqueue(sentence);

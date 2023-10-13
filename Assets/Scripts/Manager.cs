@@ -26,7 +26,7 @@ public class Manager : MonoBehaviour
         "December"};
     public static int thisMonth = 1;
     public static int thisYear = 1;
-    public static bool canLose = false;
+    public static int canLose = 2;
 
     public static int gold = 500;
     public static float constitution = 0;
@@ -96,13 +96,9 @@ public class Manager : MonoBehaviour
         //Game Over Check
         if(gold < 0)
         {
-            if(canLose)
-            {
-                Debug.Log("The Game Should Be Lost Here");
-            }
-            else canLose = true;
+            canLose--;
         }
-        else canLose = false;
+        else canLose = 2;
 
         //Ending Check
         if(thisYear == Constants.goalYear && thisMonth == Constants.goalMonth)
