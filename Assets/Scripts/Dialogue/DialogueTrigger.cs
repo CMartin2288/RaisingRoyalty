@@ -7,15 +7,17 @@ public class DialogueTrigger : MonoBehaviour
     // Start is called before the first frame update
 
     public Dialogue dialogue;
-
-    void Awake() 
-    {
-        TriggerDialogue();
+    void Awake(){
+        FindObjectOfType<DialogueManager>().EventDialogue(FindObjectOfType<Manager>(),
+                                                          dialogue);
     }
 
-    public void TriggerDialogue()
-    {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-    }
+    // public void TriggerNormalDialogue(){
+    //     FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+    // }
+    // public void TriggerEventDialogue(){
+    //     FindObjectOfType<DialogueManager>().EventDialogue(FindObjectOfType<Manager>(),
+    //                                                     dialogue);
+    // }
 
 }

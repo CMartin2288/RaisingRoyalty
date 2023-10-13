@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 153997021}
   m_Layer: 0
   m_Name: Click to Cont
-  m_TagString: Untagged
+  m_TagString: ClickTo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -666,11 +666,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1860429488}
+  m_Father: {fileID: 1366923767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -778, y: -125}
+  m_AnchoredPosition: {x: -777.7079, y: -516.44}
   m_SizeDelta: {x: 360.9503, y: 42.8621}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153997021
@@ -903,6 +903,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Welcome
+    welcome:
+    - Welcome to Raising Royalty!
+    - This is Princess! Her parents are on a business trip and you are to care and
+      nurture while they are away.
+    - Make her the best Princess she could ever be!
+    - You can assign her "Schedule" or "Talk" with her. Talking with her may or may
+      not provide helpful hints on your progress and her development!
+    - Now get to it!
+    prompt:
+    - What would you like to do?
     sentences:
     - Welcome to Raising Royalty!
     - This is Princess!
@@ -912,6 +922,20 @@ MonoBehaviour:
     - Organize her schedule or talk to her! Talking to her may or may not reveal
       useful tips on her progress!
     - We leave her in your hands!
+    generic2: []
+    generic3: []
+    destitute: []
+    princess: []
+    spoiled: []
+    helpingHand: []
+    warrior: []
+    academic: []
+    grace: []
+    lovedByAll: []
+    ordinary: []
+    poor: []
+    sick: []
+    constreq: []
 --- !u!4 &415913381
 Transform:
   m_ObjectHideFlags: 0
@@ -1431,6 +1455,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Talk
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1759309058}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &769127145
@@ -2425,6 +2461,7 @@ RectTransform:
   m_Children:
   - {fileID: 1603293334}
   - {fileID: 1860429488}
+  - {fileID: 153997020}
   - {fileID: 901014949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3093,8 +3130,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 153997020}
+  m_Children: []
   m_Father: {fileID: 1366923767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3900,7 +3936,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 2
   m_Text: 
 --- !u!222 &2028742549

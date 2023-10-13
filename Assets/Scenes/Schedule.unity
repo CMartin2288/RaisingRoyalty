@@ -4254,7 +4254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &950640264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4534,6 +4534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Scheduling
+    welcome: []
+    prompt: []
     sentences:
     - Here you can allocate the schedule for the month!
     - Choose an actvity to do. There are three categories you can browse through!
@@ -4542,6 +4544,20 @@ MonoBehaviour:
     - '"Remove" and "Add" up to 4 activities to the schedule!'
     - Press "Go" to execute the schedule!
     - Now, get to scheduling!!
+    generic2: []
+    generic3: []
+    destitute: []
+    princess: []
+    spoiled: []
+    helpingHand: []
+    warrior: []
+    academic: []
+    grace: []
+    lovedByAll: []
+    ordinary: []
+    poor: []
+    sick: []
+    constreq: []
 --- !u!4 &1042473234
 Transform:
   m_ObjectHideFlags: 0
