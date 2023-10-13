@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class EndingTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
 
     public Dialogue dialogue;
     void Awake(){
-        TriggerEventDialogue();
+        TriggerEndingDialogue();
     }
 
-    public void TriggerEventDialogue(){
-        FindObjectOfType<DialogueManager>().EventDialogue(FindObjectOfType<Manager>(),
+    public void TriggerEndingDialogue(){
+        FindObjectOfType<EndingManager>().EndingDialogue(FindObjectOfType<Manager>(),
                                                           dialogue);
     }
 
