@@ -53,7 +53,7 @@ public class EndingManager : MonoBehaviour{
         }
 
         //Princess
-        else if (Manager.grace > 80 && Manager.morals > 50) {
+        else if (Manager.grace > 75 && Manager.charm > 75 && Manager.morals > 75) {
             princess.SetActive(true);
             foreach (string sentence in dialogue.princess){
                 sentences.Enqueue(sentence);
@@ -62,7 +62,7 @@ public class EndingManager : MonoBehaviour{
         }
 
         //Spoiled
-        else if (Manager.grace > 80 && Manager.morals <= 50) {
+        else if (Manager.grace > 75 && Manager.charm > 75 && Manager.morals <= 75) {
             spoiled.SetActive(true);
             foreach (string sentence in dialogue.spoiled){
                 sentences.Enqueue(sentence);
@@ -72,7 +72,7 @@ public class EndingManager : MonoBehaviour{
 
 
         //Warrior
-        else if (Manager.strength > 80) {
+        else if (Manager.strength > 75) {
             warrior.SetActive(true);
             foreach (string sentence in dialogue.warrior){
                 sentences.Enqueue(sentence);
@@ -81,7 +81,7 @@ public class EndingManager : MonoBehaviour{
         }
         
         //Helping Hand
-        else if (Manager.constitution > 80) {
+        else if (Manager.constitution > 75) {
             helping.SetActive(true);
             foreach (string sentence in dialogue.helpingHand){
                 sentences.Enqueue(sentence);
@@ -90,7 +90,7 @@ public class EndingManager : MonoBehaviour{
         }       
 
         //Academic
-        else if (Manager.intellect > 80) {
+        else if (Manager.intellect > 75) {
             academic.SetActive(true);
             foreach (string sentence in dialogue.academic){
                 sentences.Enqueue(sentence);
@@ -99,7 +99,7 @@ public class EndingManager : MonoBehaviour{
         }
 
         //Grace
-        else if (Manager.grace > 80) {
+        else if (Manager.grace > 75) {
             grace.SetActive(true);
             foreach (string sentence in dialogue.grace) {
                 sentences.Enqueue(sentence);
@@ -108,7 +108,7 @@ public class EndingManager : MonoBehaviour{
         }
 
         //Loved By All
-        else if (Manager.charm > 80) {
+        else if (Manager.charm > 75) {
             lovedbyall.SetActive(true);
             foreach (string sentence in dialogue.lovedByAll){
                 sentences.Enqueue(sentence);
