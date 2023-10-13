@@ -69,7 +69,7 @@ public class DialogueManager : MonoBehaviour{
             }
 
             //ENDING DETECTION
-            else if (Manager.thisMonth> 1 || Manager.canLose) {
+            else if (Manager.thisYear> 1 || Manager.canLose) {
                 // GameObject End = GameObject.FindWithTag("EndTrigger");
                 // End.SetActive(true);
                 SceneManager.LoadSceneAsync("Ending");
