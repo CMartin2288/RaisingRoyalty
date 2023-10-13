@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - ClickTo
+  - EndTrigger
+  - princess
+  - spoiled
+  - helping
+  - warrior
+  - academic
+  - grace
+  - lovedbyall
+  - ordinary
+  - destitute
   layers:
   - Default
   - TransparentFX

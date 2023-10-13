@@ -430,8 +430,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 149.66748, y: -1.4115}
-  m_SizeDelta: {x: 1287.7714, y: 127.0969}
+  m_AnchoredPosition: {x: 9.089, y: -8.269}
+  m_SizeDelta: {x: 1534.0978, y: 139.1129}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &292122456
 GameObject:
@@ -549,13 +549,17 @@ MonoBehaviour:
   dialogue:
     name: 
     welcome:
-    - Pleased to me you!I hope we may make the most of our time together.
+    - It is a pleasure to meet you!! I hope we may make the most of our time together.
     - Stuffy intros aside, I've never seen you before. You must be new.
-    - Oh wow from overseas?! So far! One day I will go too just like Mama and Papa!
-    - You don't happen to know when they will come back would you?
+    - ... My quite the stickler for etiquette are you? Must you insist I speak politely?
+    - '*soft sigh* Alright, I''ll shall oblige by your request..'
     - ...
-    - No idea..? that's  ok... lets go do something fun! In celebration of this fateful
-      meeting!
+    - Yes, I am aware my debutante is mere months away.
+    - However I have more important matters to discuss. I believe it prudent to address
+      those first.
+    - 'Good, good, much obliged. First, as you''ve just arrived, I shall guide you
+      to your room and around the compound '
+    - now come  *walks away*~
     prompt: []
     sentences:
     - Did you know, a long, long, longgggg time ago
@@ -565,11 +569,12 @@ MonoBehaviour:
     - I'm gonna read it to my Mama when she gets back
     - Oh, you'll help me practice? Thanks!
     generic2:
-    - Fairy tales are magical and wonderful aren't they?
-    - The good guys win and the bad guys lose!
-    - It's like being in a magical world!
-    - I would bring Tempest with me and maybe we could find him a good mare
-    - I'd think he'd enjoy that!
+    - Fairy Tales are quite fascinating.
+    - The virtuous prevail while those with ill intent are bound to fail
+    - One can get themselves quite immersed in those tall tales.
+    - Yet sometimes I find myself more attracted towards those unruly characters.
+    - Worry not, I compose myselt far mores strictly as I must becoming of my stature.
+    - Yet I do not deny a faint yearning for their unbridled freedom.
     generic3:
     - My favorite season is summer!
     - The sun is out and I can play outside a lot more too!
@@ -586,24 +591,25 @@ MonoBehaviour:
     lovedByAll: []
     ordinary: []
     poor:
-    - We can't even attend to castle maintenence
+    - No... Since when was the castle in such a state of direpair?
     - Mama and Papa aren't even back yet...
-    - What do you think will happen??
-    - I need to earn money fast...
+    - We must call an architect and carpenter at once.
+    - But the funds... from where...
     - What should I do....
+    - I must go out and earn my keep
     sick:
-    - '*Ah~ah~achooooo!*'
-    - '*ughk* I think I overworked myself, *coughcough* shoula taken a break yesterday'
-    - I can barely do anything like this
-    - Mama and Daddy weren't able to come back home either
-    - Mama...
-    - Papa...
-    - I miss you, when are you coming back
-    - Oh, you'll stay with me? Thank you
+    - '*Ah~ah~achooo!*'
+    - '*ughk* You won''t inist I maintain formalities when I''m sick, right?'
+    - I am already regretful regarding my ouput quality today....
+    - ...
+    - Mama... Papa...
+    - When are you coming back?
+    - ...
+    - Oh, you'll stay with me? Thank you. I truly do appreciate it.
     constreq:
-    - Today's weather is lovely!
-    - The skies are blue and there's a gentle, refreshing breeze!
-    - I can feel it! Today will be a good day!
+    - On this lovely morning I woke up to a blubird's melodious singing
+    - The skies are a deep mesmerizing  blue and the  gentle yet refreshing breeze!
+    - I can feel it! There is much good fortune in a day such as today.
 --- !u!4 &295589557
 Transform:
   m_ObjectHideFlags: 0
@@ -845,7 +851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &432241629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1569,7 +1575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -425, y: 107}
+  m_AnchoredPosition: {x: -749, y: 104}
   m_SizeDelta: {x: 380.2686, y: 56.6992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &975002471
