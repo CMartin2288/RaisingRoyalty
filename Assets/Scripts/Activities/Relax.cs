@@ -20,6 +20,7 @@ public class Relax : Activity
     
     public void perform()
     {
+        rImage.sprite = Resources.Load<Sprite>("Rest");
         rText.text = "Stayed at home to rest.\n\nStress: " + Manager.stress + " - " + (Constants.statMedium*multiplier);
         Manager.stress = Manager.stress - Constants.statMedium*multiplier;
         

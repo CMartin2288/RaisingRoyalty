@@ -20,6 +20,7 @@ public class Vacation : Activity
     
     public void perform()
     {
+        rImage.sprite = Resources.Load<Sprite>("Vacation");
         rText.text = "Went out on Vacation.\n\nStress: " + Manager.stress + " - " + (Constants.statMedium*multiplier);
         Manager.stress = Manager.stress - Constants.statMedium*multiplier;
         Manager.gold -= 10;

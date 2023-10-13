@@ -21,6 +21,7 @@ public class Dance : Activity
     public void perform()
     {
         //Result Text
+        rImage.sprite = Resources.Load<Sprite>("Dance");
         rText.text = "Focused on Dance.\n\n"+
             "Grace: " + Manager.grace + " + " + (Constants.statTiny*multiplier) + "\n" +
             "Intellect: " + Manager.intellect + " - " + (Constants.statTiny*multiplier*0.5f) + "\n" +

@@ -32,6 +32,7 @@ public class Church : Activity
         {
             case 0:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Church_0");
                 rText.text = "Kicked up dust at church...\n\n"+
                     "Morals: " + Manager.morals + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Charm: " + Manager.charm + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
@@ -46,6 +47,7 @@ public class Church : Activity
                 break;
             case 1:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Church_1");
                 rText.text = "Tidied up around the church.\n\n"+
                     "Morals: " + Manager.morals + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Charm: " + Manager.charm + " + " + (Constants.statTiny*multiplier) + "\n" +

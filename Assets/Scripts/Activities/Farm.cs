@@ -32,6 +32,7 @@ public class Farm : Activity
         {
             case 0:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Farm_0");
                 rText.text = "Did a poor job at the farm...\n\n"+
                     "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Physical Talent: " + Manager.physical + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
@@ -48,6 +49,7 @@ public class Farm : Activity
                 break;
             case 1:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Farm_1");
                 rText.text = "Did a good job at the farm.\n\n"+
                     "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Physical Talent: " + Manager.physical + " + " + (Constants.statTiny*multiplier) + "\n" +

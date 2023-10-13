@@ -188,6 +188,7 @@ public class ScheduleManager : MonoBehaviour
 
         //Monthly expenses
         rText.text = "Paid 30G for this month's expenses";
+        rImage.sprite = Resources.Load<Sprite>("smile_Standard");
         Manager.gold -= 30;
         yield return new WaitForSeconds(1);
 

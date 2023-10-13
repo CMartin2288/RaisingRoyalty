@@ -21,6 +21,7 @@ public class Martial : Activity
     public void perform()
     {
         //Result Text
+        rImage.sprite = Resources.Load<Sprite>("Martial_Arts");
         rText.text = "Practiced Martial Arts.\n\n"+
             "Strength: " + Manager.strength + " + " + (Constants.statTiny*multiplier) + "\n" +
             "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier) + "\n" +

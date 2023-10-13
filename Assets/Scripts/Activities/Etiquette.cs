@@ -21,6 +21,7 @@ public class Etiquette : Activity
     public void perform()
     {
         //Result Text
+        rImage.sprite = Resources.Load<Sprite>("Etiquette");
         rText.text = "Learned proper Etiquette.\n\n"+
             "Charm: " + Manager.charm + " + " + (Constants.statTiny*multiplier) + "\n" +
             "Morals: " + Manager.morals + " + " + (Constants.statTiny*multiplier) + "\n" +

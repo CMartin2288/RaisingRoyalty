@@ -21,6 +21,7 @@ public class Magic : Activity
     public void perform()
     {
         //Result Text
+        rImage.sprite = Resources.Load<Sprite>("Magic");
         rText.text = "Experimented with Magic.\n\n"+
             "Intellect: " + Manager.intellect + " + " + (Constants.statTiny*multiplier) + "\n" +
             "Morals: " + Manager.morals + " - " + (Constants.statTiny*multiplier*0.5f) + "\n" +

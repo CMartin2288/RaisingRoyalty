@@ -32,6 +32,7 @@ public class Craft : Activity
         {
             case 0:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Crafts_0");
                 rText.text = "Couldn't find many buyers...\n\n"+
                     "Creative Talent: " + Manager.creative + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Intellect: " + Manager.intellect + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
@@ -46,6 +47,7 @@ public class Craft : Activity
                 break;
             case 1:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Crafts_1");
                 rText.text = "Sold all of the art.\n\n"+
                     "Creative Talent: " + Manager.creative + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Intellect: " + Manager.intellect + " + " + (Constants.statTiny*multiplier) + "\n" +

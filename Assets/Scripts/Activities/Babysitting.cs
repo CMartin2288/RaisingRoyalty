@@ -32,6 +32,7 @@ public class Babysitting : Activity
         {
             case 0:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Baby_0");
                 rText.text = "Had to deal with babies crying...\n\n"+
                     "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Handiness Talent: " + Manager.handiness + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
@@ -48,6 +49,7 @@ public class Babysitting : Activity
                 break;
             case 1:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Baby_1");
                 rText.text = "Cared for the children.\n\n"+
                     "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Handiness Talent: " + Manager.handiness + " + " + (Constants.statTiny*multiplier) + "\n" +

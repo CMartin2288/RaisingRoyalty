@@ -32,6 +32,7 @@ public class Busking : Activity
         {
             case 0:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Busking_0");
                 rText.text = "Couldn't gather an audience...\n\n"+
                     "Performing Talent: " + Manager.performing + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Fame: " + Manager.fame + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
@@ -46,6 +47,7 @@ public class Busking : Activity
                 break;
             case 1:
                 //Result Text
+                rImage.sprite = Resources.Load<Sprite>("Busking_1");
                 rText.text = "Received a good amount of tips.\n\n"+
                     "Performing Talent: " + Manager.performing + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Fame: " + Manager.fame + " + " + (Constants.statTiny*multiplier) + "\n" +
