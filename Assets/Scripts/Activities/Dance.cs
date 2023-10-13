@@ -21,16 +21,16 @@ public class Dance : Activity
     public void perform()
     {
         //Result Text
-        rText.text = "Studied Dance.\n\n"+
+        rText.text = "Focused on Dance.\n\n"+
             "Grace: " + Manager.grace + " + " + (Constants.statTiny*multiplier) + "\n" +
-            "Intellect: " + Manager.intellect + " - " + (Constants.statTiny*multiplier) + "\n" +
-            "Gold: " + Manager.gold + " - 40\n" +
+            "Intellect: " + Manager.intellect + " - " + (Constants.statTiny*multiplier*0.5f) + "\n" +
+            /*"Gold: " + Manager.gold + " - 40\n" +*/
             "Stress: " + Manager.stress + " + " + (Constants.statTiny*multiplier);
                 
         //Stat Change
         Manager.grace += Constants.statTiny*multiplier;
-        Manager.intellect -= Constants.statTiny*multiplier;
-        Manager.gold -= 40;
+        Manager.intellect -= Constants.statTiny*multiplier*0.5f;
+        Manager.gold -= 8;
         Manager.stress += Constants.statTiny*multiplier;
     }
 }
