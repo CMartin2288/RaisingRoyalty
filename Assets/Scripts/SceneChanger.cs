@@ -26,4 +26,15 @@ public class SceneChanger : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void DelayedStart(float wait)
+    {
+        StartCoroutine(CoDelayedStart(wait));
+    }
+
+    public IEnumerator CoDelayedStart(float wait)
+    {
+        yield return new WaitForSeconds(wait);
+        SceneManager.LoadSceneAsync("Main");
+    }
 }
