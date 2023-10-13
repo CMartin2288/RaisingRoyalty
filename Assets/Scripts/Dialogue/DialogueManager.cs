@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour{
         Debug.Log("The following dialogue is titled: " + dialogue.name);
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences) {
+        foreach (string sentence in dialogue.welcome) {
             sentences.Enqueue(sentence);
         }
         this.DisplayNextSentence();
@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour{
     public void EventDialogue(Manager mgr, Dialogue dialogue){
         Scene scene = SceneManager.GetActiveScene();
         string currScene = scene.name;
-        
+        Debug.Log("Inside Event dialogue");
         // MAIN SCENE
         if (currScene=="Main") {
             if (Manager.thisMonth == 1 && Manager.thisYear == 1) { 
@@ -181,7 +181,8 @@ public class DialogueManager : MonoBehaviour{
         //END OF MAIN SCENE
         
         //SCHEDULING SCENE
-        else if (currScene == "Scheduling") {
+        else if (currScene == "Schedule") {
+            Debug.Log("Inside scheduling");
             if (Manager.thisMonth == 1 && Manager.thisYear == 1 ) {
                 foreach (string sentence in dialogue.welcome){
                     sentences.Enqueue(sentence);
@@ -237,6 +238,7 @@ public class DialogueManager : MonoBehaviour{
     }
 
     public void DisplayNextSentence(){
+        Debug.Log("DisplayNextSentence");
         if (sentences.Count == 0) {
             EndDialogue();
             return;

@@ -8,16 +8,16 @@ public class DialogueTrigger : MonoBehaviour
 
     public Dialogue dialogue;
     void Awake(){
+        // TriggerNormalDialogue();
+        TriggerEventDialogue();
+    }
+
+    public void TriggerNormalDialogue(){
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+    }
+    public void TriggerEventDialogue(){
         FindObjectOfType<DialogueManager>().EventDialogue(FindObjectOfType<Manager>(),
                                                           dialogue);
     }
-
-    // public void TriggerNormalDialogue(){
-    //     FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-    // }
-    // public void TriggerEventDialogue(){
-    //     FindObjectOfType<DialogueManager>().EventDialogue(FindObjectOfType<Manager>(),
-    //                                                     dialogue);
-    // }
 
 }
