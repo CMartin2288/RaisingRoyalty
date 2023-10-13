@@ -239,7 +239,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cost - 60G / Day
+          m_StringArgument: Cost - 60G
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 210317063}
@@ -432,7 +432,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cost - 50G / Day
+          m_StringArgument: Cost - 50G
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 210317063}
@@ -5339,7 +5339,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cost - 40G / Day
+          m_StringArgument: Cost - 40G
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 210317063}
@@ -7485,7 +7485,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Cost - 30G / Day
+          m_StringArgument: Cost - 30G
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 210317063}

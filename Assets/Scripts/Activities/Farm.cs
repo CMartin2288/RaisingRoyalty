@@ -35,14 +35,14 @@ public class Farm : Activity
                 rText.text = "Did a poor job at the farm...\n\n"+
                     "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Physical Talent: " + Manager.physical + " + " + (Constants.statTiny*multiplier*0.5f) + "\n" +
-                    "Grace: " + Manager.grace + " - " + (Constants.statTiny*multiplier) + "\n" +
+                    "Grace: " + Manager.grace + " - " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Gold: " + Manager.gold + " + 5\n" +
                     "Stress: " + Manager.stress + " + " + (Constants.statMedium*multiplier);
                 
                 //Stat Change
                 Manager.constitution += Constants.statTiny*multiplier*0.5f;
                 Manager.physical += Constants.statTiny*multiplier*0.5f;
-                Manager.grace -= Constants.statTiny*multiplier;
+                Manager.grace -= Constants.statTiny*multiplier*0.5f;
                 Manager.gold += 5;
                 Manager.stress += Constants.statMedium*multiplier;
                 break;
@@ -51,14 +51,14 @@ public class Farm : Activity
                 rText.text = "Did a good job at the farm.\n\n"+
                     "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier) + "\n" +
                     "Physical Talent: " + Manager.physical + " + " + (Constants.statTiny*multiplier) + "\n" +
-                    "Grace: " + Manager.grace + " - " + (Constants.statTiny*multiplier) + "\n" +
+                    "Grace: " + Manager.grace + " - " + (Constants.statTiny*multiplier*0.5f) + "\n" +
                     "Gold: " + Manager.gold + " + 10\n" +
                     "Stress: " + Manager.stress + " + " + (Constants.statMedium*multiplier);
                 
                 //Stat Change
                 Manager.constitution += Constants.statTiny*multiplier;
                 Manager.physical += Constants.statTiny*multiplier;
-                Manager.grace -= Constants.statTiny*multiplier;
+                Manager.grace -= Constants.statTiny*multiplier*0.5f;
                 Manager.gold += 10;
                 Manager.stress += Constants.statMedium*multiplier;
                 break;

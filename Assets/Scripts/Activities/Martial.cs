@@ -21,16 +21,16 @@ public class Martial : Activity
     public void perform()
     {
         //Result Text
-        rText.text = "Studied Martial Arts.\n\n"+
+        rText.text = "Practiced Martial Arts.\n\n"+
             "Strength: " + Manager.strength + " + " + (Constants.statTiny*multiplier) + "\n" +
             "Constitution: " + Manager.constitution + " + " + (Constants.statTiny*multiplier) + "\n" +
-            "Gold: " + Manager.gold + " - 50\n" +
+            /*"Gold: " + Manager.gold + " - 50\n" +*/
             "Stress: " + Manager.stress + " + " + (Constants.statTiny*multiplier);
                 
         //Stat Change
         Manager.strength += Constants.statTiny*multiplier;
         Manager.constitution += Constants.statTiny*multiplier;
-        Manager.gold -= 50;
+        Manager.gold -= 10;
         Manager.stress += Constants.statTiny*multiplier;
     }
 }

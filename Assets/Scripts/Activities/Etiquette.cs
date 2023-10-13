@@ -21,16 +21,16 @@ public class Etiquette : Activity
     public void perform()
     {
         //Result Text
-        rText.text = "Studied Etiquette.\n\n"+
+        rText.text = "Learned proper Etiquette.\n\n"+
             "Charm: " + Manager.charm + " + " + (Constants.statTiny*multiplier) + "\n" +
             "Morals: " + Manager.morals + " + " + (Constants.statTiny*multiplier) + "\n" +
-            "Gold: " + Manager.gold + " - 60\n" +
+            /*"Gold: " + Manager.gold + " - 60\n" +*/
             "Stress: " + Manager.stress + " + " + (Constants.statTiny*multiplier);
                 
         //Stat Change
         Manager.charm += Constants.statTiny*multiplier;
         Manager.morals += Constants.statTiny*multiplier;
-        Manager.gold -= 60;
+        Manager.gold -= 12;
         Manager.stress += Constants.statTiny*multiplier;
     }
 }

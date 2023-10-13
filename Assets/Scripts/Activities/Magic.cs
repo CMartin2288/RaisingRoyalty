@@ -21,16 +21,16 @@ public class Magic : Activity
     public void perform()
     {
         //Result Text
-        rText.text = "Studied Magic.\n\n"+
+        rText.text = "Experimented with Magic.\n\n"+
             "Intellect: " + Manager.intellect + " + " + (Constants.statTiny*multiplier) + "\n" +
-            "Morals: " + Manager.morals + " - " + (Constants.statTiny*multiplier) + "\n" +
-            "Gold: " + Manager.gold + " - 30\n" +
+            "Morals: " + Manager.morals + " - " + (Constants.statTiny*multiplier*0.5f) + "\n" +
+            /*"Gold: " + Manager.gold + " - 30\n" +*/
             "Stress: " + Manager.stress + " + " + (Constants.statTiny*multiplier);
                 
         //Stat Change
         Manager.intellect += Constants.statTiny*multiplier;
-        Manager.morals -= Constants.statTiny*multiplier;
-        Manager.gold -= 30;
+        Manager.morals -= Constants.statTiny*multiplier*0.5f;
+        Manager.gold -= 6;
         Manager.stress += Constants.statTiny*multiplier;
     }
 }
