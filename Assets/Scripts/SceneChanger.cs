@@ -34,6 +34,7 @@ public class SceneChanger : MonoBehaviour
 
     public IEnumerator CoDelayedStart(float wait)
     {
+        MusicManager.Instance.TitleStart();
         yield return new WaitForSeconds(wait);
         SceneManager.LoadSceneAsync("Main");
     }

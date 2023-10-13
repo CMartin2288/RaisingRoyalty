@@ -20,4 +20,8 @@ public class MusicManager : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }
+
+    public void TitleStart() {
+        Destroy(this.gameObject);
+    }
 }
