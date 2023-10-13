@@ -905,23 +905,14 @@ MonoBehaviour:
     name: Welcome
     welcome:
     - Welcome to Raising Royalty!
-    - This is Princess! Her parents are on a business trip and you are to care and
-      nurture while they are away.
-    - Make her the best Princess she could ever be!
-    - You can assign her "Schedule" or "Talk" with her. Talking with her may or may
-      not provide helpful hints on your progress and her development!
-    - Now get to it!
+    - This is Princess! Her parents are away on important business
+    - In the erstwhile, raise and nurture her to be the best princess she could be!
+    - Organize her schedule or talk to her! Talking to her may or may not reveal
+      useful tips onher current status and  progress!
+    - We leave her in your hands!
     prompt:
     - What would you like to do?
-    sentences:
-    - Welcome to Raising Royalty!
-    - This is Princess!
-    - Her parents are away on important business
-    - and it's your job to care for her while they are away!
-    - Raise and nurture her to be the best princess she could be!
-    - Organize her schedule or talk to her! Talking to her may or may not reveal
-      useful tips on her progress!
-    - We leave her in your hands!
+    sentences: []
     generic2: []
     generic3: []
     destitute: []

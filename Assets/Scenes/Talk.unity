@@ -547,23 +547,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Fine Weather
+    name: 
+    welcome:
+    - Pleased to me you!I hope we may make the most of our time together.
+    - Stuffy intros aside, I've never seen you before. You must be new.
+    - Oh wow from overseas?! So far! One day I will go too just like Mama and Papa!
+    - You don't happen to know when they will come back would you?
+    - ...
+    - No idea..? that's  ok... lets go do something fun! In celebration of this fateful
+      meeting!
+    prompt: []
     sentences:
-    - Today's weather is lovely!
-    - The skies are blue and there's a gentle, refreshing breeze!
-    - I can feel it! Today will be a good day!
+    - Did you know, a long, long, longgggg time ago
+    - the castle apparently belonged to a famous bard
+    - they say just listening to his melodies would "soothe all aches and pains"
+    - I read it in a book yesterday
+    - I'm gonna read it to my Mama when she gets back
+    - Oh, you'll help me practice? Thanks!
     generic2:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Fairy tales are magical and wonderful aren't they?
+    - The good guys win and the bad guys lose!
+    - It's like being in a magical world!
+    - I would bring Tempest with me and maybe we could find him a good mare
+    - I'd think he'd enjoy that!
     generic3:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - My favorite season is summer!
+    - The sun is out and I can play outside a lot more too!
+    - Mama and Papa always buy me ice cream too
+    - but I take forever to savour the flavor!
+    - Mama always warns me to "eat quickly before it melts"
     destitute: []
     princess: []
     spoiled: []
@@ -574,23 +586,24 @@ MonoBehaviour:
     lovedByAll: []
     ordinary: []
     poor:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - We can't even attend to castle maintenence
+    - Mama and Papa aren't even back yet...
+    - What do you think will happen??
+    - I need to earn money fast...
+    - What should I do....
     sick:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - '*Ah~ah~achooooo!*'
+    - '*ughk* I think I overworked myself, *coughcough* shoula taken a break yesterday'
+    - I can barely do anything like this
+    - Mama and Daddy weren't able to come back home either
+    - Mama...
+    - Papa...
+    - I miss you, when are you coming back
+    - Oh, you'll stay with me? Thank you
     constreq:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Today's weather is lovely!
+    - The skies are blue and there's a gentle, refreshing breeze!
+    - I can feel it! Today will be a good day!
 --- !u!4 &295589557
 Transform:
   m_ObjectHideFlags: 0

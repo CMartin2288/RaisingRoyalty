@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour{
         Debug.Log("The following dialogue is titled: " + dialogue.name);
         sentences.Clear();
 
-        foreach (string sentence in dialogue.welcome) {
+        foreach (string sentence in dialogue.sentences) {
             sentences.Enqueue(sentence);
         }
         this.DisplayNextSentence();
@@ -198,43 +198,43 @@ public class DialogueManager : MonoBehaviour{
         }
         //END OF SCHEDULING
         
-        // //TALK SCENE -- player hints and other events with requirements
-        // else if (currScene == "Talk") {
-        //     if (Manager.thisMonth == 1 && Manager.thisYear == 1) {
-        //         foreach (string sentence in dialogue.welcome){
-        //             sentences.Enqueue(sentence);
-        //         }
-        //         this.DisplayNextSentence();     
-        //     }
-        //     // sick
-        //     else if (Manager.sick) {
-        //         foreach (string sentence in dialogue.sick) {
-        //             sentences.Enqueue(sentence);
-        //         }
-        //         this.DisplayNextSentence();
-        //     }
-        //     //  poor
-        //     else if (Manager.gold < 30) {
-        //         foreach (string sentence in dialogue.poor){
-        //             sentences.Enqueue(sentence);
-        //         }
-        //         this.DisplayNextSentence();
-        //     }
-            
-        //     // constitution req
-        //     else if (Manager.constitution > 80) {
-        //         foreach (string sentence in dialogue.constreq) {
-        //             sentences.Enqueue(sentence);
-        //         }
-        //         this.DisplayNextSentence();
-        //     }
-        //     }
-        //     // executes generic dialogues
-        //     else {
-        //         randomGenericDialogue(dialogue);
-        //     }
-        //}
-        // //TALK SCENE
+        //TALK SCENE -- player hints and other events with requirements
+        else if (currScene == "Talk") {
+            if (Manager.thisMonth == 1 && Manager.thisYear == 1) {
+                foreach (string sentence in dialogue.welcome){
+                    sentences.Enqueue(sentence);
+                }
+                this.DisplayNextSentence();     
+            }
+
+            //  poor
+            else if (Manager.gold < 30) {
+                foreach (string sentence in dialogue.poor){
+                    sentences.Enqueue(sentence);
+                }
+                this.DisplayNextSentence();
+            }
+            // sick
+            else if (Manager.sick) {
+                foreach (string sentence in dialogue.sick) {
+                    sentences.Enqueue(sentence);
+                }
+                this.DisplayNextSentence();
+            }
+            // constitution req
+            else if (Manager.constitution > 80) {
+                foreach (string sentence in dialogue.constreq) {
+                    sentences.Enqueue(sentence);
+                }
+                this.DisplayNextSentence();
+            }
+
+            // executes generic dialogues
+            else {
+                randomGenericDialogue(dialogue);
+            }
+        }
+        //TALK SCENE
     }
 
     public void DisplayNextSentence(){

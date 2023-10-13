@@ -4510,10 +4510,11 @@ MonoBehaviour:
   dialogue:
     name: Scheduling
     welcome:
-    - Here you can allocate the schedule for the month!
+    - Here you can schedule out the plans for the next month!
     - Choose an actvity to do. There are three categories you can browse through!
     - There's a description beneath each activity.
-    - Some events require certain stat levels to complete sucessfully!
+    - Some events need certain stat levels to complete sucessfully! Better skils
+      results in greater rewards!
     - '"Remove" and "Add" up to 4 activities to the schedule!'
     - Press "Go" to execute the schedule!
     - Now, get to scheduling!!
@@ -8457,77 +8458,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833806863}
   m_CullTransparentMesh: 1
---- !u!1 &1970030727
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1970030729}
-  - component: {fileID: 1970030728}
-  m_Layer: 0
-  m_Name: DialogueObj (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1970030728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970030727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4446d44f0349e244ba3fe73a09ec890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: Scheduling
-    welcome:
-    - Here you can allocate the schedule for the month!
-    - Choose an actvity to do. There are three categories you can browse through!
-    - There's a description beneath each activity.
-    - Some events require certain stat levels to complete sucessfully!
-    - '"Remove" and "Add" up to 4 activities to the schedule!'
-    - Press "Go" to execute the schedule!
-    - Now, get to scheduling!!
-    prompt:
-    - What's on the agenda today?
-    sentences: []
-    generic2: []
-    generic3: []
-    destitute: []
-    princess: []
-    spoiled: []
-    helpingHand: []
-    warrior: []
-    academic: []
-    grace: []
-    lovedByAll: []
-    ordinary: []
-    poor: []
-    sick: []
-    constreq: []
---- !u!4 &1970030729
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970030727}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1085, y: 595.1481, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2048590230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9273,5 +9203,4 @@ SceneRoots:
   - {fileID: 1611376553}
   - {fileID: 179084105}
   - {fileID: 1042473234}
-  - {fileID: 1970030729}
   - {fileID: 72502562}
