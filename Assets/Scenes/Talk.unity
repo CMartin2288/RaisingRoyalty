@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.32941177, g: 0.5254902, b: 0.5294118, a: 0.78039217}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.99215686, b: 0.92941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -551,35 +551,33 @@ MonoBehaviour:
     welcome:
     - It is a pleasure to meet you!! I hope we may make the most of our time together.
     - Stuffy intros aside, I've never seen you before. You must be new.
-    - ... My quite the stickler for etiquette are you? Must you insist I speak politely?
-    - '*soft sigh* Alright, I''ll shall oblige by your request..'
+    - ... You're being such a stickler!!  Must you insist I speak politely?
+    - '*soft sigh* Fine, I''ll oblig'
     - ...
-    - Yes, I am aware my debutante is mere months away.
-    - However I have more important matters to discuss. I believe it prudent to address
-      those first.
-    - 'Good, good, much obliged. First, as you''ve just arrived, I shall guide you
-      to your room and around the compound '
-    - now come  *walks away*~
+    - Yes, I am aware my debutante is a mere months away.
+    - 'First, as you''ve just arrived, I shall guide you to your room and around
+      the compound '
+    - follow me *walks away*~
     prompt: []
     sentences:
-    - Did you know, a long, long, longgggg time ago
-    - the castle apparently belonged to a famous bard
+    - Did you know, Once long long  ago
+    - this castle supposedly belonged to a famous bard
     - they say just listening to his melodies would "soothe all aches and pains"
-    - I read it in a book yesterday
-    - I'm gonna read it to my Mama when she gets back
-    - Oh, you'll help me practice? Thanks!
+    - I read it in a book just yesterday
+    - I intend to read it to Mother when she gets back
+    - Oh?... You would lend me your ear for practice? Thanks!
     generic2:
     - Fairy Tales are quite fascinating.
     - The virtuous prevail while those with ill intent are bound to fail
-    - One can get themselves quite immersed in those tall tales.
-    - Yet sometimes I find myself more attracted towards those unruly characters.
-    - Worry not, I compose myselt far mores strictly as I must becoming of my stature.
-    - Yet I do not deny a faint yearning for their unbridled freedom.
+    - I myself am fascinated with such tall tales.
+    - Yet sometimes I find myself rooting for the villain..
+    - It's a bore for the hero to always prevail, don't you think so?
+    - Such unbridled freedom to do as their hearts desire
     generic3:
-    - My favorite season is summer!
-    - The sun is out and I can play outside a lot more too!
-    - Mama and Papa always buy me ice cream too
-    - but I take forever to savour the flavor!
+    - My favorite season is Summer!
+    - The sun is out and the weather bright. I can go outside a lot more too!
+    - Mama and Papa alway buy me ice cream too,
+    - but I take my time to savour the flavor!
     - Mama always warns me to "eat quickly before it melts"
     destitute: []
     princess: []
@@ -591,16 +589,16 @@ MonoBehaviour:
     lovedByAll: []
     ordinary: []
     poor:
-    - No... Since when was the castle in such a state of direpair?
+    - No... Since when was the castle in such a state of disrepair?
     - Mama and Papa aren't even back yet...
-    - We must call an architect and carpenter at once.
+    - We must call someone to fix it at once.
     - But the funds... from where...
-    - What should I do....
-    - I must go out and earn my keep
+    - Ahh... What should I do....
+    - I'll have to go to town and earn more money...
     sick:
     - '*Ah~ah~achooo!*'
     - '*ughk* You won''t inist I maintain formalities when I''m sick, right?'
-    - I am already regretful regarding my ouput quality today....
+    - I already regret how unproductive I was today....
     - ...
     - Mama... Papa...
     - When are you coming back?
@@ -608,7 +606,8 @@ MonoBehaviour:
     - Oh, you'll stay with me? Thank you. I truly do appreciate it.
     constreq:
     - On this lovely morning I woke up to a blubird's melodious singing
-    - The skies are a deep mesmerizing  blue and the  gentle yet refreshing breeze!
+    - The skies are a deep mesmerizing deep blue and there is a gentle yet refreshing
+      breeze!
     - I can feel it! There is much good fortune in a day such as today.
 --- !u!4 &295589557
 Transform:
@@ -767,7 +766,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1044,7 +1043,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.15686275, g: 0.4117647, b: 0.41568628, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1530,7 +1529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.99215686, b: 0.92941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1825,8 +1824,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2204,7 +2203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.15686275, g: 0.4117647, b: 0.41568628, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2460,7 +2459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.99215686, b: 0.92941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2617,7 +2616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.15686275, g: 0.4117647, b: 0.41568628, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2702,7 +2701,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.15686275, g: 0.4117647, b: 0.41568628, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3009,8 +3008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.27400002}
-  m_AnchoredPosition: {x: 0.8967285, y: 0.5576782}
-  m_SizeDelta: {x: 62.487427, y: 1.1154175}
+  m_AnchoredPosition: {x: 0.8967285, y: -21.15393}
+  m_SizeDelta: {x: 62.4874, y: 44.5386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091142321
 MonoBehaviour:
@@ -3116,8 +3115,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4293787135
+  m_fontColor: {r: 1, g: 0.99215686, b: 0.92941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
