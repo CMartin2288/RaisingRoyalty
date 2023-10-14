@@ -1359,9 +1359,9 @@ MonoBehaviour:
     - Under your wardship, the Princess was the star of the Debutante, setting a
       good example amongst all the nobles and gaining a lot of connections and influence.
     spoiled:
-    - 'She is the epitome of etiquette, but possibly to the point of frustration
-      from the other nobles. While demure, she can come off too aloof. She was not
-      able to make the connections she needed at her Debutante. '
+    - 'She is the epitome of grace, but possibly to the point of frustration from
+      the other nobles. While demure, she can come off too aloof. She was not able
+      to make the connections she needed at her Debutante. '
     helpingHand:
     - While the nobles do not look as favorably on the Princess's charitable work,
       she has gained the trust of the local townsfolk. She often spends her weekends
@@ -1375,17 +1375,17 @@ MonoBehaviour:
       bibliophile. Too preoccupied in one of her favorite novels, she arrived to
       her own debutante late. It made an impression on the nobles for sure.
     grace:
-    - While originally very klutzy the Princess is the picture of poise now. Her
+    - While originally very clumsy the Princess is the picture of poise now. Her
       effortless elegance draws in others. She is often asked by the other noble
       ladies if she might take their daughters as a ward.
     lovedByAll:
     - 'Sparing time for equal parts charity work and formal events, she has support
-      from both the nobles and commoners.She is often doted on wherever she goes,
+      from both the nobles and commoners. She is often doted on wherever she goes,
       much to the jealousy of the other noble ladies. '
     ordinary:
-    - 'The Princess was unable to prepare for her Debutante. Her entrance lacked
-      oomph and she didn''t make any waves in high society. While a noble her name
-      was simply that of another one amongst many in the family tree. '
+    - 'The Princess was unable to prepare for her Debutante. Her presence was lacking
+      and she didn''t make any waves in high society. While a noble her name was
+      simply one amongst many in the family tree. '
     poor: []
     sick: []
     constreq: []

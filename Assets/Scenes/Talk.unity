@@ -552,7 +552,7 @@ MonoBehaviour:
     - It is a pleasure to meet you!! I hope we may make the most of our time together.
     - Stuffy intros aside, I've never seen you before. You must be new.
     - ... You're being such a stickler!!  Must you insist I speak politely?
-    - '*soft sigh* Fine, I''ll oblig'
+    - '*soft sigh* Fine, I''ll oblige.'
     - ...
     - Yes, I am aware my debutante is a mere months away.
     - 'First, as you''ve just arrived, I shall guide you to your room and around
@@ -560,7 +560,7 @@ MonoBehaviour:
     - follow me *walks away*~
     prompt: []
     sentences:
-    - Did you know, Once long long  ago
+    - Did you know, Once long, long ago
     - this castle supposedly belonged to a famous bard
     - they say just listening to his melodies would "soothe all aches and pains"
     - I read it in a book just yesterday
@@ -576,8 +576,8 @@ MonoBehaviour:
     generic3:
     - My favorite season is Summer!
     - The sun is out and the weather bright. I can go outside a lot more too!
-    - Mama and Papa alway buy me ice cream too,
-    - but I take my time to savour the flavor!
+    - Mama and Papa always buy me ice cream too,
+    - but I take my time to savor the flavor!
     - Mama always warns me to "eat quickly before it melts"
     destitute: []
     princess: []
@@ -597,7 +597,7 @@ MonoBehaviour:
     - I'll have to go to town and earn more money...
     sick:
     - '*Ah~ah~achooo!*'
-    - '*ughk* You won''t inist I maintain formalities when I''m sick, right?'
+    - '*ughh* You won''t insist I maintain formalities when I''m sick, right?'
     - I already regret how unproductive I was today....
     - ...
     - Mama... Papa...

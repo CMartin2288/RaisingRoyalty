@@ -164,7 +164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1210, y: 0}
+  m_AnchoredPosition: {x: -1215, y: 0}
   m_SizeDelta: {x: 512.8018, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &28787496
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756c25c738c1039439febb17ff35cc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: -1210, y: 0}
+  targetPosition: {x: -1215, y: 0}
   smoothFactor: 4
 --- !u!1 &47371837
 GameObject:
@@ -3172,7 +3172,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -1210
+          m_FloatArgument: -1215
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
